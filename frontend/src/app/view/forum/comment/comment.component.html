@@ -1,0 +1,21 @@
+<div class="comment-container">
+  <button [routerLink]="['/comentate', post]">Leave a Comment</button>
+</div>
+
+<div *ngFor="let comment of comments">
+  <div class="about-post">
+    <div class="post-header">
+      <span class="author">{{ comment.author }}</span>
+      <span class="post-time">{{ comment.createdDate }}</span>
+    </div>
+    <div class="post-content">
+      <h3>{{ comment.post }}</h3>
+      <h4>{{ comment.content }}</h4>
+    </div>
+    <div class="post-actions">
+      <button *ngIf = "userId == comment.author_id" [routerLink]="['/comentate', post, comment.id]">Update</button>
+      <button *ngIf = "userId == comment.author_id"(click)="deleteComment(comment.id)">Delete</button>
+    </div>
+  </div>
+</div>
+
