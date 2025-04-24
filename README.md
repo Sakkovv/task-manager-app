@@ -1,29 +1,36 @@
-# Task Manager
+Digital Star Forum
+Project Description
+Digital Star Forum is a web platform that allows users to register, log in, and engage in discussions by creating posts, commenting, and interacting with other users. It is designed to foster a community where ideas and opinions can be shared in a structured and moderated environment.
 
-## Описание проекта  
-Task Manager – это веб-приложение для управления задачами, где пользователи могут регистрироваться, входить в систему, создавать, редактировать, удалять и просматривать свои задачи.  
+Technologies
+Frontend: Angular
+Backend: Django REST Framework
+Database: PostgreSQL
 
-## Технологии  
-**Frontend:** Angular  
-**Backend:** Django REST Framework  
-**База данных:** PostgreSQL  
+Features
+User registration and login (JWT authentication)
 
-## Функциональность  
-- Регистрация и вход пользователей (JWT-аутентификация)  
-- Создание, редактирование и удаление задач  
-- Категоризация задач  
-- Отслеживание статуса задач  
-- API-интеграция между фронтендом и бэкендом  
+Post creation, editing, and deletion
 
-## Участники команды  
+Commenting system under each post
+
+User profile management
+
+API integration between frontend and backend
+
+Team Members
 Әскербекұлы Жұмабек
 Сағынаев Әлімжан
 Жумагулов Азат
 
-## Запуск проекта  
-
-### Frontend  
-```sh
+Project Setup
+Frontend
+sh
+Копировать
+Редактировать
 cd frontend  
+npm install  
+ng serve
+Project SetUp - cd frontend  
 npm install  
 ng serve
